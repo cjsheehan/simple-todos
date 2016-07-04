@@ -3,8 +3,13 @@
     <header>
       <h1>ToDo List</h1>
 
+      <label class="hide-completed">
+        <input type="checkbox" />
+        Hide Completed Tasks
+      </label>
+
       <form class="new-task">
-          <input type="text" name="text" placeholder="Type to add new task" />
+        <input type="text" name="text" placeholder="Type to add new task" />
       </form>
 
     </header>
@@ -12,7 +17,7 @@
     <ul>
       {{#each tasks}}
         {{> task}}
-      {{/each}}
+      {{/each}}    
     </ul>
   </div>
 </body>
